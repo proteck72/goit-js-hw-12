@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form class="form" autocomplete="off">
+          <input
+            type="text"
+            name="search-text"
+            placeholder="Search images..."
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <div id="loader-container">
+          <span class="loader is-hidden"></span>
+        </div>
+
+        <ul class="gallery"></ul>
+      </div>
+    </main>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
